@@ -1,0 +1,104 @@
+<html>
+<head>
+ <title>Love Calculator - Calculate Your Love Compatibility | LoveCalcDev</title>
+  <meta name="description" content="Discover your love compatibility with LoveCalcDev's accurate love calculator. Find out how compatible you are with your partner and explore relationship insights.">
+  <meta name="keywords" content="love calculator, love compatibility, relationship compatibility, love meter, relationship insights, love test">
+  <meta name="author" content="LoveCalcDev">
+  <meta property="og:title" content="Love Calculator - Calculate Your Love Compatibility | LoveCalcDev">
+  <meta name="google-site-verification" content="qT9gmiK421kMVV9gTaRXXqk__ZQxOxU2cqNYHglNr1M" />
+  
+  <style>
+    body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0000FF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4040F5;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Love❤️ Calculator📱</h1>
+    <div class="input-container">
+      <label for="name1">Your Name:</label>
+      <input type="text" id="name1">
+    </div>
+    <div class="input-container">
+      <label for="name2">Partner's Name:</label>
+      <input type="text" id="name2">
+    </div>
+    <button onclick="calculateLove()">Calculate</button>
+    <div id="result"></div>
+  </div>
+
+  <script >function calculateLove() {
+  var name1 = document.getElementById('name1').value;
+  var name2 = document.getElementById('name2').value;
+
+  // Simple calculation
+  var lovePercentage = Math.random() * 100;
+  lovePercentage = lovePercentage.toFixed(2); // Limit to 2 decimal places
+
+  var result = name1 + ' and ' + name2 + ' have a love percentage of ' + lovePercentage + '%!';
+  document.getElementById('result').innerText = result;
+}
+</script>
+</body>
+</html>
